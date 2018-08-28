@@ -29,6 +29,15 @@ task Seqware_Sanger_Somatic_Workflow {
     runtime {
         docker: 'quay.io/pancancer/pcawg-sanger-cgp-workflow:2.0.0-cwl1'
     }
+    meta {
+        author: "Keiran Raine"
+        email: "keiranmraine@gmail.com"
+        description: "The Sanger's Cancer Genome Project core somatic calling workflow from \nthe\
+            \ ICGC PanCancer Analysis of Whole Genomes (PCAWG) project.\nFor more information\
+            \ see the PCAWG project [page](https://dcc.icgc.org/pcawg) and our GitHub\n[page](https://github.com/ICGC-TCGA-PanCancer)\
+            \ for our code including the source for\n[this workflow](https://github.com/ICGC-TCGA-PanCancer/CGP-Somatic-Docker)."
+    }
+
 }
 
 workflow Seqware_Sanger_Somatic_Workflow {
